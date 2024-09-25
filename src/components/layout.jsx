@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import { NavLink } from 'react-router-dom';
 import React from 'react';
-import  Group  from '/TFTL-test/img/Group.png';
+import  Group  from '../img/Group.png';
 import  Union  from '../img/Union.png';
 import Burger from '../img/Burger.png';
 export const Layout = () => {
