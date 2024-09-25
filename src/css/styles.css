@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 100vh;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -31,9 +31,9 @@
 
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; 
+  /* justify-content: center;
+  align-items: center; */
+  height: 100vh;
 }
 
 .container {
@@ -41,9 +41,8 @@ body {
   width: 375px;
   height: 553px;
   top: 70px;
-  gap: 0px;
-  opacity: 0px;
   margin: auto;
+  padding: 0 20px;
 }
 
 .visually-hidden {
@@ -65,48 +64,266 @@ body {
   pointer-events: none;
 }
 
+.text {
+  position: relative;
+  width: 333px;
+  height: 111px;
+  top: 220px;
+  left: 21px;
+  margin: auto;
+  color: #373737;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 37.4px;
+  text-align: center;
+  z-index: 2;
+}
 
 @keyframes rotate {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform: rotate(-360deg); /* Вращение против часовой стрелки */
+    transform: rotate(-360deg);
   }
 }
 
 .circle {
+  position: relative;
   width: 100px;
-  height: 100px; 
-  animation: none; 
-  transition: transform 0.5s ease; 
-  cursor: pointer; 
+  height: 100px;
+  animation: none;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  width: 90px;
+  height: 90px;
+  top: 405px;
+  left: 213px;
+  z-index: 3;
 }
 
 .circle:hover {
   animation: rotate 4s linear infinite; /* Запуск анимации при наведении */
 }
 
-.rotated-link1 {
-  position: absolute; 
-  left: 20px; 
-  top: 50%; /* Устанавливает ссылку по центру по вертикали */
-  transform: translateY(-50%) rotate(-90deg); /* Поворачивает на 90 градусов против часовой стрелки и выравнивает по вертикали */
-  transform-origin: left bottom; /* Задает точку вращения */
-  white-space: nowrap; /* Запрещает перенос текста на новую строку */
-  color: blue; /* Цвет текста ссылки */
-  text-decoration: none; /* Убирает подчеркивание у ссылки */
+.elipse {
+  position: relative;
+  width: 294px;
+  height: 294px;
+  top: 130px;
+  left: 41px;
+}
+/* 
+.marquee-container {
+ 
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 150vw; 
+  height: 100%; 
+  z-index: 5;
+  
+  height: 70px;
+  top: 836.08px;
+  left: -174.14px;
+
+  border: 1px 0px 0px 0px;
+  border: 1px solid #373737;
+  transform: rotate(-57deg); 
 }
 
+.marquee-row {
+  font-size: 24px;
+  padding: 10px 0;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.marquee-left {
+  animation: marquee-left 10s linear infinite;
+}
+
+.marquee-right {
+  animation: marquee-right 10s linear infinite;
+  top: 30px; /* Смещение для второй строки */
+/* } */
+
+/* @keyframes marquee-left {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: -100%;
+  }
+} */ */
+
+
+.nav-link {
+  display: none;
+}
 
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    /* height: 1024px; */
+
     padding: 0 32px;
   }
 
+  .nav-link {
+    display: block;
+  }
 
+  .burger {
+    visibility: hidden;
+  }
 
-  
+  .circle {
+    width: 112px;
+    height: 112px;
+    top: 643px;
+    left: 475px;
+  }
+
+  .elipse {
+    width: 482px;
+    height: 482px;
+    top: 271px;
+    left: 143px;
+  }
+
+  .rotated-link1 {
+    position: absolute;
+    left: 20px;
+
+    transform: translateY(-50%) rotate(-90deg);
+    transform-origin: left bottom;
+    width: 83px;
+    height: 20px;
+    top: 554px;
+    left: 10px;
+    gap: 0px;
+    opacity: 0px;
+
+    display: inline-block;
+    color: #373737;
+
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .rotated-link1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+
+  .rotated-link1:hover {
+    color: white;
+  }
+
+  .rotated-link1:hover::after {
+    width: 100%;
+  }
+
+  .rotated-link2 {
+    position: absolute;
+
+    display: inline-block;
+    color: #373737;
+
+    transition: color 0.3s ease;
+
+    width: 60px;
+    height: 20px;
+    top: 992px;
+    left: 354px;
+  }
+
+  .rotated-link2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+
+  .rotated-link2:hover {
+    color: white;
+  }
+
+  .rotated-link2:hover::after {
+    width: 100%;
+  }
+
+  .rotated-link3 {
+    position: absolute;
+    left: 20px;
+    transform: translateY(-50%) rotate(90deg);
+    transform-origin: right bottom;
+
+    display: inline-block;
+    color: #373737;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    width: 69px;
+    height: 20px;
+    top: 478px;
+    left: 758px;
+  }
+
+  .rotated-link3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+
+  .rotated-link3:hover {
+    color: white;
+  }
+
+  .rotated-link3:hover::after {
+    width: 100%;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-link{
+    display: none;
+  }
 }

@@ -19,7 +19,7 @@ export const Layout = () => {
            
           </li>
           <li>
-            <NavLink to="/"> <img src={Burger} /></NavLink>
+            <NavLink className='burger' to="/"> <img src={Burger} /></NavLink>
            
           </li>
         </ul>
