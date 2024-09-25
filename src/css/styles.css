@@ -15,11 +15,98 @@
   font-weight: 400;
 
   color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: #bebebe;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.container {
+  position: relative;
+  width: 375px;
+  height: 553px;
+  top: 70px;
+  gap: 0px;
+  opacity: 0px;
+  margin: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(-360deg); /* Вращение против часовой стрелки */
+  }
+}
+
+.circle {
+  width: 100px;
+  height: 100px; 
+  animation: none; 
+  transition: transform 0.5s ease; 
+  cursor: pointer; 
+}
+
+.circle:hover {
+  animation: rotate 4s linear infinite; /* Запуск анимации при наведении */
+}
+
+.rotated-link1 {
+  position: absolute; 
+  left: 20px; 
+  top: 50%; /* Устанавливает ссылку по центру по вертикали */
+  transform: translateY(-50%) rotate(-90deg); /* Поворачивает на 90 градусов против часовой стрелки и выравнивает по вертикали */
+  transform-origin: left bottom; /* Задает точку вращения */
+  white-space: nowrap; /* Запрещает перенос текста на новую строку */
+  color: blue; /* Цвет текста ссылки */
+  text-decoration: none; /* Убирает подчеркивание у ссылки */
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+
+
+
+  
 }
