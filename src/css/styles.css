@@ -35,7 +35,7 @@
 body {
   display: flex;
    justify-content: center;
-  /* align-items: center;  */
+  
   height: 100vh;
   overflow-y: hidden;
   
@@ -107,7 +107,7 @@ body {
 }
 
 .circle:hover {
-  animation: rotate 4s linear infinite; /* Запуск анимации при наведении */
+  animation: rotate 4s linear infinite; 
 }
 
 .elipse {
@@ -118,59 +118,6 @@ body {
  height: 294px;
  
 }
-
-/* 
-.marquee-container {
- 
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  width: 150vw; 
-  height: 100%; 
-  z-index: 5;
-  
-  height: 70px;
-  top: 836.08px;
-  left: -174.14px;
-
-  border: 1px 0px 0px 0px;
-  border: 1px solid #373737;
-  transform: rotate(-57deg); 
-}
-
-.marquee-row {
-  font-size: 24px;
-  padding: 10px 0;
-  position: absolute;
-  white-space: nowrap;
-}
-
-.marquee-left {
-  animation: marquee-left 10s linear infinite;
-}
-
-.marquee-right {
-  animation: marquee-right 10s linear infinite;
-  top: 30px; /* Смещение для второй строки */
-/* } */
-
-/* @keyframes marquee-left {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: -100%;
-  }
-}
-
-@keyframes marquee-right {
-  0% {
-    right: 100%;
-  }
-  100% {
-    right: -100%;
-  }
-} */ */
 
 
 .nav-link {
