@@ -10,7 +10,7 @@ import React from 'react';
 export default function App(){
   return(
    
-      <div className='container'>
+      <div >
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Main />} />
