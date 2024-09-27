@@ -5,7 +5,7 @@ import buttons from '../img/buttons.png';
 
 export const Main = () => {
   return (
-    <section className='main-container'>
+    <div >
       {/* <div className="marquee-container">
   <div className="marquee-row marquee-left">Текст біжить вліво</div>
   <div className="marquee-row marquee-right">Текст біжить вправо</div>
@@ -31,6 +31,6 @@ export const Main = () => {
           </Link>
         </li>
       </ul>
-    </section>
+    </div>
   );
 };
