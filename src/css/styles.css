@@ -48,6 +48,7 @@ body {
   padding: 0 20px;
   box-sizing: content-box;
   align-items: center;
+  top: auto;
   
 }
 
@@ -81,7 +82,7 @@ body {
   line-height: 37.4px;
   text-align: center;
   z-index: 2;
-  top:130px;
+  top:193px;
 }
 
 @keyframes rotate {
@@ -100,7 +101,7 @@ body {
   cursor: pointer;
   width: 90px;
   height: 90px;
-  top: 100px;
+  top: 163px;
   left: 170px; 
   z-index: 3;
 }
@@ -111,8 +112,8 @@ body {
 
 .elipse {
  position: absolute;
- top: 80px;
- left: 40px;
+ top: 143px;
+ left: 40px; 
  width: 294px;
  height: 294px;
  
@@ -327,18 +328,11 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .container{
+    top:auto;
+  }
   .nav-link{
     display: none;
-  }
-
-  .rotated-link1, .rotated-link3{
-    top: 574px; 
-    right: 30px;
-  }
-
-  .elipse{
-    left: 141px;
-    top: 301px;
   }
 }
 
