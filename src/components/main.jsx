@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Elipse from '../img/Ellipse.png';
-import buttons from '../img/buttons.png';
+import Elipse from '../img/Ellipse.svg';
+import buttons from '../img/buttons.svg';
 
 export const Main = () => {
   return (

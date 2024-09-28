@@ -9,7 +9,9 @@
 @import url('./header.css');
 
 :root {
-  font-family: "Roboto Slab", system-ui;
+  font-family: 'Grtsk Giga';
+  font-weight: bold;
+  font-style: normal;
   font-optical-sizing: auto;
   font-size: 16px;
   line-height: 24px;
@@ -31,6 +33,7 @@
   -webkit-text-size-adjust: 100%;
   
 }
+
 
 body {
   display: flex;
@@ -173,15 +176,15 @@ body {
     position: absolute;
     transform: translateY(-50%) rotate(-90deg);
     transform-origin: left bottom;
-    width: 83px;
+    width: auto; /* Измените ширину на автоматическую */
     height: 20px;
     top: 574px;
     left: 30px;
     z-index: 10;
-
+  
     display: inline-block;
     color: #373737;
-
+  
     text-decoration: none;
     transition: color 0.3s ease;
   }
@@ -213,7 +216,7 @@ body {
 
     transition: color 0.3s ease;
     z-index: 10;
-    width: 60px;
+    width: auto;
     height: 20px;
     bottom: 30px; 
     /* right: 30px; */
@@ -248,7 +251,7 @@ body {
     text-decoration: none;
     transition: color 0.3s ease;
     z-index: 10;
-    width: 69px;
+    width: auto;
     height: 20px;
     top: 574px; 
     right: 30px;
@@ -329,5 +332,18 @@ body {
   .elipse{
     top: 143px;
     left: 471px;
+  }
+
+  .text{
+   
+    font-size: 82px;
+    font-weight: 700;
+    line-height: 90.2px;
+    text-align: center;
+  }
+
+  .elipse{
+    width: 578px;
+    height: 578px;
   }
 }

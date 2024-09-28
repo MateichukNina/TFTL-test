@@ -2,9 +2,9 @@ import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import { NavLink } from 'react-router-dom';
 import React from 'react';
-import  Group  from '../img/Group.png';
-import  Union  from '../img/Union.png';
-import Burger from '../img/Burger.png';
+import  Group  from '../img/Group 53.png';
+import  Union  from '../img/Union.svg';
+import Burger from '../img/Burger.svg';
 export const Layout = () => {
   return (
     <>
