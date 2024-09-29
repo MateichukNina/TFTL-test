@@ -6,10 +6,10 @@ import buttons from '../img/buttons.svg';
 export const Main = () => {
   return (
     <div >
-      {/* <div className="marquee-container">
+       <div className="marquee-container">
   <div className="marquee-row marquee-left">Текст біжить вліво</div>
   <div className="marquee-row marquee-right">Текст біжить вправо</div>
-</div> */}
+</div> 
       <img className="elipse" src={Elipse}></img>
       <h1 className="text">FULL-CYCLE<br />EVENT AGENCY</h1>
       <img className="circle" src={buttons} />
