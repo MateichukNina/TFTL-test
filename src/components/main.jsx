@@ -5,15 +5,18 @@ import buttons from '../img/buttons.svg';
 
 export const Main = () => {
   return (
-    <div >
-       <div className="marquee-container">
-  <div className="marquee-row marquee-left">Текст біжить вліво</div>
-  <div className="marquee-row marquee-right">Текст біжить вправо</div>
-</div> 
+    <div className="main-container">
+      <div class="diagonal-container">
+        <div class="marquee-row-left"> FULL-CYCLE EVENT AGENCY</div>
+        <div class="marquee-row-right">FULL-CYCLE EVENT AGENCY</div>
+      </div>
       <img className="elipse" src={Elipse}></img>
-      <h1 className="text">FULL-CYCLE<br />EVENT AGENCY</h1>
+      <h1 className="text">
+        FULL-CYCLE
+        <br />
+        EVENT AGENCY
+      </h1>
       <img className="circle" src={buttons} />
-
       <ul className="nav-link link">
         <li>
           <Link to="where" className="rotated-link1">
