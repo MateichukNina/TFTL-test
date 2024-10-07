@@ -1,3 +1,4 @@
+
 .header {
   padding: 16px 0;
 }
@@ -18,10 +19,10 @@
 
 .language-options{
   position: absolute;
-  right: 75%; 
+ left: 30%;
   top: 14px;
   display: flex;
-  gap: 10px;
+  gap: 4px;
   /* opacity: 0; */
   transform: translateX(-50px); 
   transition: opacity 0.5s ease, transform 0.5s ease; 
@@ -48,25 +49,35 @@
 .nav-list:hover .language-item:nth-child(2) {
   opacity: 1;
   transform: translateX(0);
-  transition-delay: 0.1s; /* Затримка для другого елемента */
+  transition-delay: 0.1s; 
 }
 
 
 .nav-list img {
-  width: 50px; /* Задаем ширину изображений */
+  width: 50px; 
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .nav-list img:hover {
-  transform: scale(1.1); /* Увеличение изображения на 10% при наведении */
-  opacity: 0.8; /* Пример изменения прозрачности при наведении */
+  transform: scale(1.1); 
+  opacity: 0.8; 
 }
+
+
 
 
 @media screen and (min-width: 767px) {
   .header {
     width: 767px;
   }
+
+  .language-options{
+    
+   left: 15%;
+  
+  
+  }
+  
 }
 
 @media screen and (min-width: 1023px) {
